@@ -4,11 +4,10 @@ from pymongo import MongoClient
 class CRUD(object):
 
 	def __init__(self):
-		self.cluster = MongoClient("mongodb+srv://larryarms95:RaqtcUEphXtg5rJH@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
+		self.cluster = MongoClient("mongodb+srv://larryarms95:PASSWORD@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
+		
 		self.db = self.cluster["db"]
 		self.collection = self.db["col"]
-
-		self.collection.delete_many({});
 
 		print("SUCCESS - accessed database")
 
@@ -46,7 +45,7 @@ class CRUD(object):
 		else:
 			results = self.collection.find_one(data)
 			if results is None:
-				print("ERROR - " + data["name"] + " was not found")
+				print("ERROR - " + "that was not found")
 			else:
 				results = self.collection.find(data)
 				for item in results:
@@ -84,4 +83,42 @@ class CRUD(object):
 				print("SUCCESS - " +data["name"] + " deleted")
 
 
-	
+	#DELETE ALL (DANGER)
+	def deleteAll(self):
+		self.collection.delete_many({});
+		print("SUCCESS - database deleted!")
+
+
+class LocalDB(object):
+
+	def __init__(self):
+		self.cluster = MongoClient('mongodb://localhost:27017')
+		self.db = self.cluster["AAC"]
+		self.collection = self.db["animals"]
+		print("SUCCESS - accessed database")
+
+
+	#CREATE
+	def create(self, data):
+			if data is None or data == {}:
+				print("ERROR - No data was passed in")
+			else:
+				results = self.collection.find_one(data)
+				if results is None:
+					self.collection.insert_one(data)
+					print("SUCCESS - " + data["name"] + " was successfully added.")
+				else:
+					print("ERROR - Data " + results["name"] + " already in database.")
+
+	#READ
+	def read(self, data):
+		if data is None or data == {}:
+			print("ERROR - No data was passed in")
+		else:
+			results = self.collection.find_one(data)
+			if results is None:
+				print("ERROR - " + data["name"] + " was not found")
+			else:
+				results = self.collection.find(data)
+				for item in results:
+					print("SUCCESS - found " + item["name"])

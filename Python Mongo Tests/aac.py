@@ -1,15 +1,16 @@
 import aacCRUD
 from aacCRUD import CRUD
 
+#LOCAL Mongodb (for testing purposes)
+a = CRUD('mongodb://localhost:27017')
 
-a = CRUD()
+b = CRUD("mongodb+srv://aacuser:PASSWORD@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
 
+#Insert all data into database (data already in)
+#b.mongoimport("C:\\Users\\Lawrence\\Downloads\\aacdb.csv")
 
-a.read({"name":"Frank"})
+print("LOCAL")
 a.read({"name":"Kitty"})
-a.create({"name":"Sofia Jade"})
 
-a.update({"name":"Sofia Jade"},{"name":"Trinity Sofia"})
-
-a.delete({"name":"Sofia Jade"})
-a.delete({"name":"Trinity Sofia"})
+print("CLOUD")
+b.read({"name":"Frank"})

@@ -4,7 +4,9 @@ from CRUD import CRUD
 
 c = CRUD()
 
+c.deleteAll()
 c.builddb()
+
 
 #CREATE
 d = {"_id": 5, "name":"Smoke", "Age": 15}
@@ -16,7 +18,7 @@ c.create(d)
 c.read(d)
 c.read(d)
 c.read(None)
-c.read({"name":"Puck"})
+c.read({"Age":15})
 c.read({"name":"Lawrence"})
 c.read({"name":"lawrence"})
 c.read({"name":"Larry"})
