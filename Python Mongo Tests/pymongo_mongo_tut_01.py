@@ -2,7 +2,7 @@
 import pymongo
 from pymongo import MongoClient
 
-cluster = MongoClient("mongodb+srv://larryarms95:PASSWORD@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://larryarms95:RaqtcUEphXtg5rJH@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
 
 db = cluster["db"]
 collection = db["col"]

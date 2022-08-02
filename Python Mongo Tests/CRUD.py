@@ -4,7 +4,7 @@ from pymongo import MongoClient
 class CRUD(object):
 
 	def __init__(self):
-		self.cluster = MongoClient("mongodb+srv://larryarms95:PASSWORD@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
+		self.cluster = MongoClient("mongodb+srv://larryarms95:yh0okRBJkaFVCJnw@cluster0.cyqsq.mongodb.net/?retryWrites=true&w=majority")
 		
 		self.db = self.cluster["db"]
 		self.collection = self.db["col"]

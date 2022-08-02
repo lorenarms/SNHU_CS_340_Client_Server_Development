@@ -1,7 +1,14 @@
+#Lawrence Artl III
+#CS 340 22EW6
+#Project 1 - CRUD MODULE - SUBLIME TEXT
+#July 28, 2022
+
+
 import pymongo
 from pymongo import MongoClient
 
 import json
+from bson.json_util import dumps, loads
 import csv
 import pandas as pd
 
@@ -21,9 +28,13 @@ class CRUD(object):
 	    """
 	    
 	    #'header' must mach the header of the csv doc
-	    header = ["age_upon_outcome","animal_id","animal_type","breed","color","date_of_birth","datetime","monthyear","name","outcome_subtype","outcome_type","sex_upon_outcome","location_lat","location_long","age_upon_outcome_in_weeks"]
+	    header = ["age_upon_outcome","animal_id","animal_type","breed","color",
+	    	"date_of_birth","datetime","monthyear","name",
+	    	"outcome_subtype","outcome_type","sex_upon_outcome",
+	    	"location_lat","location_long","age_upon_outcome_in_weeks"]
+
 	    #to make things easier place csv file in same folder
-	    csvfile = open('aacdb.csv', 'r')
+	    csvfile = open(csv_path, 'r')
 	    reader = csv.DictReader( csvfile )
 
 	    for each in reader:
@@ -49,6 +60,7 @@ class CRUD(object):
 	#READ
 	def read(self, data):
 		s = json.dumps(data)
+		x = []
 		if data is None or data == {}:
 			print("ERROR - No data was passed in")
 		else:
@@ -60,8 +72,10 @@ class CRUD(object):
 				count = 0
 				for item in results:
 					print("SUCCESS - " + s + " was found")
+					x.append(item)
 					count+=1
-				print(str(count) + " total document(s) containing " + s + " were found")
+				print("*** " + str(count) + " total document(s) containing " + s + " were found")
+				return results
 
 
 	#UPDATE
