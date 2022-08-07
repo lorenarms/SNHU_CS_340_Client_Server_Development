@@ -8,7 +8,10 @@ import pymongo
 from pymongo import MongoClient
 
 import json
+from bson.json_util import ObjectId
 from bson.json_util import dumps, loads
+from flask import Flask, jsonify
+
 import csv
 import pandas as pd
 
@@ -16,22 +19,24 @@ import pandas as pd
 # CRUD module for accessing mongodb in Atlas at Mongodb.com
 class CRUD(object):
 
-	def __init__(self, client):
+	def __init__(self, client, db, col):
 		self.cluster = MongoClient(client)
-		self.db = self.cluster["AAC"]
-		self.collection = self.db["animals"]
+		self.db = self.cluster[db]
+		self.collection = self.db[col]
 
-	def mongoimport(self, csv_path):
+	#def __init__(self, client):
+	#	self.cluster = MongoClient(client)
+	#	self.db = self.cluster['AAC']
+	#	self.collection = self.db['animals']
+
+	def mongoimport(self, csv_path, header):
 
 	    """ Imports a csv file at path csv_name to a mongo colection
 	    returns: count of the documants in the new collection
 	    """
 	    
 	    #'header' must mach the header of the csv doc
-	    header = ["age_upon_outcome","animal_id","animal_type","breed","color",
-	    	"date_of_birth","datetime","monthyear","name",
-	    	"outcome_subtype","outcome_type","sex_upon_outcome",
-	    	"location_lat","location_long","age_upon_outcome_in_weeks"]
+	    
 
 	    #to make things easier place csv file in same folder
 	    csvfile = open(csv_path, 'r')
@@ -78,6 +83,13 @@ class CRUD(object):
 				return results
 
 
+	#READ ALL
+	def readAll(self, data):
+		results = self.collection.find(data)
+        
+		return results
+
+
 	#UPDATE
 	def update(self, data, replace):
 		d = json.dumps(data)
@@ -108,3 +120,9 @@ class CRUD(object):
 				self.collection.delete_one(data)
 				s = json.dumps(data)
 				print("SUCCESS - " + s + " deleted")
+                
+class JSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, ObjectId):
+            return str(o)
+        return json.JSONEncoder.default(self, o)
