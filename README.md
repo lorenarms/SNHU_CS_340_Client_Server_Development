@@ -9,7 +9,7 @@
   <a href="https://github.com/lorenarms/SNHU_CS_330_Projects/tree/master/7-1 Final Project - A 3D Scene/Documentation" target="_blank">documentation</a>. The README file will give you information about how to install and run the program (Python is required), and you'll want to set up a Mongodb server either locally or on Atlas (check out my YouTube channel for information on how to do that).
   <br>
   <h4>Final Project UI Design</h4>
-  <img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/Python%20Mongo%20Tests/01%20mainpage.png" atl="[picture of final project]" style="width:1280px;height:620px;">
+  <img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/Python%20Mongo%20Tests/01%20mainpage.png" atl="[picture of final project]" style="width:1280px;height:520px;">
                                                                                                                                
   </p>
  <hr>
