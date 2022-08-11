@@ -12,6 +12,9 @@
   <img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/Python%20Mongo%20Tests/01%20mainpage.png" atl="[picture of final project]" style="width:1280px;height:520px;">
                                                                                                                                
   </p>
+  <p>
+  For this project, I was tasked with first developing a Mongodb database (I created one in the cloud on Atlas, as well as on my local machine for testing purposes). I developed various indexes to help with search queries, as well as a CRUD module in python in order to access the database. Finally, I designed a user interface (using Python, Plotly, and Dash) in order to make accessing the database much easier.
+  </p>
  <hr>
   <p>
   You can check out my entire <a href="https://www.youtube.com/channel/UCGtp8PRHgPCQHYoSxbMST8A" target="_blank">YouTube channel</a> for more videos about coding projects I've done.</p>
