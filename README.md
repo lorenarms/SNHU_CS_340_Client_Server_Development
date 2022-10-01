@@ -16,8 +16,10 @@
   For this project, I was tasked with first developing a Mongodb database (I created one in the cloud on Atlas, as well as on my local machine for testing purposes). I developed various indexes to help with search queries, as well as a CRUD module in python in order to access the database. Finally, I designed a user interface (using Python, Plotly, and Dash) in order to make accessing the database much easier.
   </p>
  <hr>
-  <p>
-  You can check out my entire <a href="https://www.youtube.com/channel/UCGtp8PRHgPCQHYoSxbMST8A" target="_blank">YouTube channel</a> for more videos about coding projects I've done.</p>
-<p>Also, please check out my <a href="http://artllj.com" target="_blank">Personal Website</a> for more information about me, and my <a href="https://www.linkedin.com/in/lorenarms95/" target="_blank">LinkedIn</a> to get additional information. </p>
+<p>Check out my <a href="https://www.youtube.com/channel/UCGtp8PRHgPCQHYoSxbMST8A" target="_blank">YouTube channel</a> for more videos about coding projects I've done.</p>
+<p>Also, check out my <a href="http://artllj.com" target="_blank">Personal Website</a> for more information about me, and my <a href="https://www.linkedin.com/in/lorenarms95/" target="_blank">LinkedIn</a> to see if I'd be a good fit for your team. </p>
 <h3>Thanks for stopping by!</h3>
-<img src="https://media-exp2.licdn.com/dms/image/C5603AQEqU5vuSjmWrg/profile-displayphoto-shrink_400_400/0/1641574403621?e=1660780800&v=beta&t=hukMeE3aKt4d6lyocOdHmZmJ16QC0bWLUaaT2d_m5Gk" atl="[picture of me]" style="width:100px;height:100px;">
+<img src="https://github.com/lorenarms/SNHU_CS_370_Emerging_Trends_in_CS/blob/main/images/profile.png" atl="[picture of me]" style="width:100px;">
+<p>much love
+-L
+</p>
