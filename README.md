@@ -8,8 +8,45 @@
   Feel free to browse my code and check out the various applications that I developed during the semester. The culmination of my learning can be found in the  <a href="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/Python%20Mongo%20Tests/ModuleSixMilestone_AAC.py" target="_blank">Final Project file</a>. For more information about the project, see the 
   <a href="https://github.com/lorenarms/SNHU_CS_330_Projects/tree/master/7-1 Final Project - A 3D Scene/Documentation" target="_blank">documentation</a>. The README file will give you information about how to install and run the program (Python is required), and you'll want to set up a Mongodb server either locally or on Atlas (check out my YouTube channel for information on how to do that).
   <br>
-  <h4>Final Project UI Design</h4>
-  <img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/Python%20Mongo%20Tests/01%20mainpage.png" atl="[picture of final project]" style="width:1280px;height:520px;">
+  <h3>Final Project UI Design</h3>
+  
+  
+  <table>
+    <tr>
+      <td><h3>Main List</h3>
+      <p>The final database design consists of a main list of animals from the shelter (below) that can be sorted by each heading. Additionally, entries can be deleted by clicking the red 'x' on the left of each entry. Entries can also be edited in real-time by simply clicking on the data to be changed.</p>
+       <p>The list can be narrowed down to important groups of focus by clicking any of the buttons at the top of the list.</p>
+       <ul>
+         <li>Water Rescue</li>
+         <li>Moutnain Rescue</li>
+         <li>Disaster Rescue</li>
+       </ul>
+      </td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/images/01.png" atl="[top]" style="width:600px;"></td>
+    </tr>
+    <tr>
+      <td><h3>Interactive Histogram</h3><p>This histogram shows the dates of birth of each of the animals in the list. The histogram updates automatically when the list above is refactored for specific groups.</p></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/images/03.png" atl="[bottom]" style="width:600px;"></td>
+    </tr>
+    <tr>
+      <td><h3>Interactive Histogram and Map</h3>
+        <p>The Histogram of Animal Outcomes changes as the list above is modified to show various groups. The map on the right can be zoomed, and it shows the location of each of the animals from the database. The map also changes based on which groups are being shown.</p>
+      </td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/images/02.png" atl="[top]" style="width:600px;"></td>
+    </tr>
+</table>
+</p>
+
+<h3>Sample of the site's interactivity</h3>
+<p>In this animation the interactivity of the list is shown. The user selects "Water Rescue" from the list, and the visualizations update accordingly.</p>
+<img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/images/aac.gif" atl="[top]" style="width:600px;">
+
                                                                                                                                
   </p>
   <p>
