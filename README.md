@@ -1,6 +1,27 @@
 <h1>CS 340 - Client / Server Development</h1>
 <h2>Lawrence Artl III<br>
   Southern New Hampshire University</h2>
+Center: Online
+
+<h2>
+Course Prerequisites
+</h2>
+CS 218 or CS 300
+<h2>
+Course Description
+</h2>
+<p>Students will learn how to apply database systems concepts and principles to develop client/server applications that interface client-side code with databases.
+</p>
+<p>
+This course covers the following competencies, which represent the knowledge and skills relevant to your field:
+<ul>
+    <li>CS-30433: Apply database systems concepts and principles in the development of a client/server application
+    <li>CS-30434: Create a database that can interface with client-side code
+    <li>CS-30435: Develop client-side code that interfaces with databases
+</ul>
+</p>
+<hr>
+
   <p>
   Welcome to the repository for the various projects from my CS 340 Client / Server Development class at SNHU Online! 
   This class was by far my most challenging and most rewarding to date, and honestly was the most fun as well. Working with databases really brought the whole CS Program back around to relevance with the modern world. Just about every interaction we have with the internet revolves around databases of some kind. Be it logging into our social media or bank accounts, shopping on our favorite retail site, or accessing research information, more often than not a database is working behind the scenes. To access that database, there is a CRUD module developed on the backend, and of course a front end that consists of a UI to make navigating all of the information much easier. This class covered all three parts.
@@ -8,8 +29,13 @@
   Feel free to browse my code and check out the various applications that I developed during the semester. The culmination of my learning can be found in the  <a href="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/Python%20Mongo%20Tests/ModuleSixMilestone_AAC.py" target="_blank">Final Project file</a>. For more information about the project, see the 
   <a href="https://github.com/lorenarms/SNHU_CS_330_Projects/tree/master/7-1 Final Project - A 3D Scene/Documentation" target="_blank">documentation</a>. The README file will give you information about how to install and run the program (Python is required), and you'll want to set up a Mongodb server either locally or on Atlas (check out my YouTube channel for information on how to do that).
   <br>
-  <h3>Final Project UI Design</h3>
   
+  <h3>Final Project: Animal Shelter Database</h3>
+  <p>
+  For this project, I was tasked with first developing a Mongodb database (I created one in the cloud on Atlas, as well as on my local machine for testing purposes). I developed various indexes to help with search queries, as well as a CRUD module in python in order to access the database. Finally, I designed a user interface (using Python, Plotly, and Dash) in order to make accessing the database much easier.
+  </p>
+    
+  <h3>Final Project UI Design</h3>
   
   <table>
     <tr>
@@ -46,13 +72,9 @@
 <h3>Sample of the site's interactivity</h3>
 <p>In this animation the interactivity of the list is shown. The user selects "Water Rescue" from the list, and the visualizations update accordingly.</p>
 <img src="https://github.com/lorenarms/SNHU_CS_340_Client_Server_Development/blob/main/images/aac.gif" atl="[top]" style="width:600px;">
-
-                                                                                                                               
-  </p>
-  <p>
-  For this project, I was tasked with first developing a Mongodb database (I created one in the cloud on Atlas, as well as on my local machine for testing purposes). I developed various indexes to help with search queries, as well as a CRUD module in python in order to access the database. Finally, I designed a user interface (using Python, Plotly, and Dash) in order to make accessing the database much easier.
-  </p>
- <hr>
+</p>
+  
+<hr>
 <p>Check out my <a href="https://www.youtube.com/channel/UCGtp8PRHgPCQHYoSxbMST8A" target="_blank">YouTube channel</a> for more videos about coding projects I've done.</p>
 <p>Also, check out my <a href="http://artllj.com" target="_blank">Personal Website</a> for more information about me, and my <a href="https://www.linkedin.com/in/lorenarms95/" target="_blank">LinkedIn</a> to see if I'd be a good fit for your team. </p>
 <h3>Thanks for stopping by!</h3>
